@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Page Title</title>
+</head>
+<body>
+  <h1><%= show.name %></h1>
+  <p><%= show.description %></p>
+  <h2><%= show.rating %></h2>
+  <h3>Genres</h3>
+  <ul>
+    <% show.genres.forEach(genre => { %>
+      <li><%= genre %></li>
+    <% }) %>
+  </ul> 
+  <h3>Actors</h3>
+  <ul>
+    <% show.actors.forEach(actor => { %>
+      <li><%= actor %></li>
+    <% }) %>
+  </ul>
+  <form method="POST" action=<%= `/shows/${showId}/delete` %>>
+    <button type="submit">DELETE</button>
+  </form>
+  <h2><a href=<%= `/shows/${showId}/edit`%>>EDIT</a></h2>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Page Title</title>
+</head>
+<body>
+  <h1>EDIT SHOW?</h1>
+  <form method="POST" action=<%= `/shows/${showId}` %>>
+    <input type=text name='showName' value=<%=show.name%> />
+    <input type=text name='showDescription' value=<%= show.description %>/>
+    <button type=submit>EDIT SHOW</button>
+  </form>
+</body>
+</html>

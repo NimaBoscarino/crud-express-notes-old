@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Page Title</title>
+</head>
+<body>
+  <h1><a href="/shows/new">NEW SHOW</a></h1>
+  <h1>ALL SHOWS</h1>
+  <ul>
+    <% for (let showKey in shows) { %>
+      <ul>
+        <h2><a href="/shows/<%= showKey %>"><%= shows[showKey].name %></a></h2>
+        <p><%= shows[showKey].description %></p>
+      </ul>
+    <% } %>
+  </ul>
+  
+</body>
+</html>
