@@ -4,6 +4,19 @@
 
 REPO: https://github.com/NimaBoscarino/crud-express-notes
 
+## REST Cheatsheet
+
+### CRUD to HTTP
+
+| Action    | HTTP verb/method |
+| --------- | ---------------- |
+|**C**reate | POST             |
+|**R**ead   | GET              |
+|**U**pdate | PUT/PATCH        |
+|**D**elete | DELETE           |
+
+**NOTE:** Browsers only support `GET` and `POST` actions from pure HTTP forms. To use `PUT`/`PATCH`/`DELETE` you'll either need to use client-side JS or the [`method-override`](http://expressjs.com/en/resources/middleware/method-override.html) middleware.
+
 What's this week about?
 
   - Server side web app code
@@ -93,3 +106,8 @@ callback( // call the callback
   }
 )
 ```
+
+NOTE: THESE NOTES WERE ADAPTED FORM Khurram Virani's notes and Fabio Neves' notes
+
+https://github.com/fzero/lhl-lectures/tree/master/w2d3-crud-with-express
+https://gist.github.com/kvirani/b077f62ce71e7dab798cc80193264b5b
